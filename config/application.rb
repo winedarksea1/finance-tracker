@@ -19,5 +19,7 @@ module FinanceTracker
     # I just added this 1/29/2020
     
     config.hosts << "08d6d9ae1c2a4360a3b3199060a6a0a1.vfs.cloud9.us-east-2.amazonaws.com"
+    config.hosts << "radiant-crag-01011.herokuapp.com"
+
   end
 end
