@@ -1,4 +1,10 @@
 class Stock < ApplicationRecord
+
+  has_many :user_stocks
+  has_many :users, through: :user_stocks
+  
+  # validations
+  validates :name, :ticker, presence: true
     
   # create a static method for looking up a stock
   def self.new_lookup(ticker_symbol)
