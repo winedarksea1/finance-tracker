@@ -20,4 +20,9 @@ class Stock < ApplicationRecord
     end
   end
   
+  # create a static method for checking whether a stock already exists in our db
+  def self.check_db(ticker_symbol)
+    return where(ticker: ticker_symbol).first
+  end
+  
 end
